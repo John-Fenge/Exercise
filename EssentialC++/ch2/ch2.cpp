@@ -95,8 +95,8 @@ int main()
     while(user_try){
         cout<<"Please enter a position(1~1024): ";
         cin>>pos;
-        if(seq_elem(pos,element,fun_arry[1])){
-            cout<<"element # "<<pos<<" is "<<element<<endl;"\n";
+        if(seq_elem(pos,element,fun_arry[1])){//fun_arry[0] 或者 fun_arry[1]
+            cout<<"element # "<<pos<<" is "<<element<<endl;;
         }
         cout<<"Do  you want to try again? (Y/N)"<<endl;
         cin>>user_choose;
