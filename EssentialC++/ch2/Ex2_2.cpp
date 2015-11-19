@@ -1,4 +1,4 @@
-//pentagonal公式Pn=n*(3n-1)/2，输入用户指定大小的vector中，并输出此vector
+﻿//pentagonal公式Pn=n*(3n-1)/2，输入用户指定大小的vector中，并输出此vector
 #include <iostream>
 #include<vector>
 
@@ -15,7 +15,7 @@ bool pen_elem(vector<int> &pen, int pos){
     if(size_is_ok(pos)){
         pen.erase(pen.begin(),pen.end());
         for(int i=0;i<pos;i++){
-            pen.push_back(i*(3*i-1)/2);
+            pen.push_back((i+1)*(3*(i+1)-1)/2);
         }
         return true;
     }
