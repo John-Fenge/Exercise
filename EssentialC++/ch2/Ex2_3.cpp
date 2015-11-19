@@ -1,4 +1,4 @@
-//pentagonal公式Pn=n*(3n-1)/2，输入用户指定大小的vector中，并输出此vector
+﻿//pentagonal公式Pn=n*(3n-1)/2，输入用户指定大小的vector中，并输出此vector
 //分离函数，inline实现检测位置是否合理判断数值是否已被计算
 #include <iostream>
 #include<vector>
@@ -14,7 +14,7 @@ bool size_is_ok(int pos){
 
 void pen_calcute(vector<int> &pen, int pos){
     for(int i=pen.size();i<pos;i++){
-        pen.push_back(i*(3*i-1)/2);
+        pen.push_back((i+1)*(3*(i+1)-1)/2);
     }
 }
 
